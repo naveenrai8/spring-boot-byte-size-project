@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: oauth2-keycloak-auth-code-flow
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/naveen
+server:
+  port: 8000
+app:
+  clientId: Client_name_configured_in_keycloak
